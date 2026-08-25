@@ -1,0 +1,958 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #141619;
+}
+
+header {
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-left: 5%;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+header img {
+    width: 200px;
+    height: 60px;
+}
+
+header ul {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul li {
+    display: inline-block;
+    width: auto;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-size: 23px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #5FA4E6;
+    background: linear-gradient(90deg, #665DCD, #5FA4E6, #D2AB67);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anim 2.5s linear infinite;
+}
+
+@keyframes anim {
+    0% {
+        background-position: 200%;
+    }
+
+    50% {
+        background-position: 150%;
+    }
+
+    70% {
+        background-position: 100%;
+    }
+
+    100% {
+        background-position: 50%;
+    }
+}
+
+header ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 2s;
+    background: linear-gradient(90deg, #665DCD, #5FA4E6, #D2AB67);
+}
+
+header ul li a:hover::after {
+    width: 100%;
+    color: #665DCD;
+}
+
+header .o {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #665DCD, #5FA4E6, #D2AB67);
+    display: inline-block;
+}
+
+header p {
+    font-size: 30px;
+    display: inline-block;
+    margin-left: 10px;
+    color: white;
+    box-shadow: none;
+}
+
+header p:hover {
+    background: linear-gradient(90deg, #46426b, #3f6589, #a27527);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anim 2.5s linear infinite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.home {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.home h1 {
+    font-size: 105px;
+    font-style: unset;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-family: 100;
+    background: linear-gradient(90deg, #FFFFFF, #5F5F5F, #F4F4F4);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anima 2.5s linear infinite;
+}
+
+.home h2 {
+    font-size: 105px;
+    font-style: unset;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-family: 100;
+    margin-top: 30px;
+    background: linear-gradient(90deg, #FFFFFF, #5F5F5F, #F4F4F4);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anima 2.5s linear infinite;
+}
+
+@keyframes anima {
+    0% {
+        background-position: 200%;
+    }
+
+    10% {
+        background-position: 180%;
+    }
+
+    20% {
+        background-position: 160%;
+    }
+
+    30% {
+        background-position: 140%;
+    }
+
+    40% {
+        background-position: 120%;
+    }
+
+    50% {
+        background-position: 120%;
+    }
+
+    60% {
+        background-position: 100%;
+    }
+
+    70% {
+        background-position: 80%;
+    }
+
+    80% {
+        background-position: 60%;
+    }
+
+    90% {
+        background-position: 40%;
+    }
+
+    100% {
+        background-position: 20%;
+    }
+}
+
+.home h3 {
+    font-size: 25px;
+    color: #ffffff;
+    width: 700px;
+    margin-left: 600px;
+    margin-top: 50px;
+    color: #cac9c9;
+}
+
+.home button {
+    width: 250px;
+    height: 60px;
+    background: linear-gradient(135deg, #665DCD, #5FA4E6, #D2AB67);
+    border: none;
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+    margin-top: 50px;
+    transition: 3s;
+    border-radius: 2px;
+}
+
+.home button:hover {
+    background: linear-gradient(135deg, #5FA4E6, #D2AB67, #665DCD);
+    color: #343434;
+}
+
+#About {
+    width: 90%;
+    margin-left: 5%;
+    color: white;
+    display: grid;
+    margin-top: 16%;
+    justify-content: center;
+    text-align: center;
+}
+
+#About p {
+    font-size: 85px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: -3px;
+    background: linear-gradient(90deg, #FFFFFF, #5F5F5F, #F4F4F4);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anima 2.5s linear infinite;
+}
+
+#About h3 {
+    font-size: 28px;
+    width: 750px;
+    font-weight: 200;
+    font-style: initial;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(135deg, #5FA4E6, #D2AB67, #665DCD);
+    margin-left: 480px;
+    margin-top: 20px;
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anima 2.5s linear infinite;
+}
+
+#About .about-div {
+    display: grid;
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+}
+
+#About .about-div .about-divs {
+    display: flex;
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+    height: 250px;
+}
+
+#About .about-div .about-divs2 {
+    display: flex;
+    width: 90%;
+    text-align: center;
+    height: 250px;
+    margin-left: 5%;
+}
+
+#About .about-div .about-divs .about-dvssmall {
+    width: 25%;
+    height: 100%;
+    border-right: #5FA4E6 2px solid;
+    border-bottom: #5FA4E6 2px solid;
+    text-align: center;
+}
+
+#About .about-div .about-divs .about-dvssmall2 {
+    width: 25%;
+    height: 100%;
+    border-bottom: #5FA4E6 2px solid;
+}
+
+#About .about-div .about-divs .about-dvssmall h1,
+.about-dvssmall2 h1 {
+    font-size: 50px;
+    margin-top: 50px;
+    background: transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#About .about-div .about-divs .about-dvssmall h2,
+.about-dvssmall2 h2 {
+    font-size: 40px;
+    background: transparent;
+    font-style: oblique;
+    font-weight: 200;
+
+}
+
+#About .about-div .about-divs div:hover {
+    background: linear-gradient(135deg, #5FA4E6, #D2AB67, #665DCD);
+    color: black;
+}
+
+#About .about-div .about-divs2 .about-dvssmall {
+    width: 25%;
+    height: 100%;
+    border-right: #5FA4E6 2px solid;
+}
+
+#About .about-div .about-divs2 .about-dvssmall2 {
+    width: 25%;
+    height: 100%;
+}
+
+#About .about-div .about-divs2 .about-dvssmall h1,
+.about-dvssmall2 h1 {
+    font-size: 50px;
+    margin-top: 50px;
+    background: transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#About .about-div .about-divs2 .about-dvssmall h2,
+.about-dvssmall2 h2 {
+    font-size: 40px;
+    background: transparent;
+    font-style: oblique;
+    font-weight: 200;
+}
+
+#About .about-div .about-divs2 div:hover {
+    background: linear-gradient(135deg, #5FA4E6, #D2AB67, #665DCD);
+    color: black;
+}
+
+#Work {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 150px;
+}
+
+#Work .text-div p {
+    font-size: 90px;
+    font-style: unset;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-family: 100;
+    background: linear-gradient(90deg, #5FA4E6, #D2AB67, #665DCD);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anima 2.5s linear infinite;
+    width: auto;
+    margin-left: 400px;
+}
+
+#Work .text-div h2 {
+    font-size: 25px;
+    font-style: unset;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-family: 100;
+    background: linear-gradient(90deg, #5FA4E6, #D2AB67, #665DCD);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anima 2.5s linear infinite;
+    width: 700px;
+    margin-left: 500px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#Work .all-div {
+    width: 600px;
+    height: 700px;
+    margin-top: 100px;
+}
+
+#Work .all-div p {
+    font-size: 60px;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+}
+
+#Work .all-div h1 {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+#Work .all-div h2 {
+    font-size: 32px;
+    font-weight: 200;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    margin-top: 30px;
+    width: 580px;
+}
+
+#Work img {
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    left: 920px;
+    background: transparent;
+    top: 250%;
+}
+
+#Work h3 {
+    font-size: 35px;
+    color: white;
+    width: 180px;
+    margin-top: 30px;
+}
+
+#Work h3::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 2s;
+    background: linear-gradient(90deg, #665DCD, #5FA4E6, #D2AB67);
+
+}
+
+.fa-arrow-right {
+    color: #ffffff;
+    font-size: 40px;
+    position: absolute;
+    left: 300px;
+    top: 2770px;
+}
+
+#Work h3:hover {
+    background: linear-gradient(45deg, #5FA4E6, #D2AB67, #665DCD);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anima 2.5s linear infinite;
+}
+
+#Work i:hover {
+    background: linear-gradient(45deg, #5FA4E6, #D2AB67, #665DCD);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anima 2.5s linear infinite;
+}
+
+.none img {
+    width: 1100px;
+    height: 1100px;
+    background: transparent;
+}
+
+.none .text-div {
+    width: 800px;
+    padding: 40px;
+    margin-left: 1000px;
+    margin-top: -800px;
+}
+
+.none .text-div h1 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.none .text-div .p1 {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #ffffff;
+    margin-bottom: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.none .text-div p {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #b3b3b3;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+.none h3 {
+    font-size: 35px;
+    color: white;
+    width: 180px;
+    margin-top: 30px;
+
+}
+
+.none h3::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 2s;
+    background: linear-gradient(90deg, #665DCD, #5FA4E6, #D2AB67);
+}
+
+.none .fa-arrow-right {
+    color: #ffffff;
+    font-size: 40px;
+    position: absolute;
+    left: 1250px;
+    top: 3870px;
+}
+
+.none h3:hover {
+    background: linear-gradient(45deg, #5FA4E6, #D2AB67, #665DCD);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anima 2.5s linear infinite;
+}
+
+.none p:hover {
+    background: linear-gradient(45deg, #5FA4E6, #D2AB67, #665DCD);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anima 2.5s linear infinite;
+}
+
+.none .p1:hover {
+    background: linear-gradient(45deg, #5FA4E6, #D2AB67, #665DCD);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anima 2.5s linear infinite;
+}
+
+.none h1:hover {
+    background: linear-gradient(45deg, #5FA4E6, #665DCD, #D2AB67);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anima 2.5s linear infinite;
+}
+
+.none2 {
+    width: 90%;
+    height: 600px;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+.none2 .im-big {
+    position: absolute;
+    left: 1370px;
+    top: 4000px;
+}
+
+.none2 p {
+    font-size: 80px;
+    width: 600px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    position: absolute;
+    top: 4300px;
+    left: 500px;
+}
+
+.none2 p:hover {
+    background: linear-gradient(45deg, #5FA4E6, #665DCD, #D2AB67);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anima 2.5s linear infinite;
+}
+
+.img {
+    position: absolute;
+    left: 100px;
+    background: transparent;
+}
+
+.img-1 {
+    left: 200px;
+}
+
+.img-2 {
+    left: 100px;
+    margin-top: 150px;
+}
+
+.img-3 {
+    left: 300px;
+    margin-top: 100px;
+}
+
+#Blog {
+    width: 90%;
+    margin-left: 5%;
+    height: 800px;
+    text-align: center;
+}
+
+#Blog p {
+    font-size: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    letter-spacing: -2px;
+    word-spacing: 3px;
+}
+
+#Blog p {
+    background: linear-gradient(90deg, green, orange, blue);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anima 6s linear infinite;
+    font-weight: 600;
+}
+
+@keyframes animat {
+    0% {
+        background-position: 200%;
+    }
+}
+
+#Blog h1 {
+    font-size: 25px;
+    background: linear-gradient(90deg, green, orange, blue);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anima 8s linear infinite;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+@keyframes animat {
+    0% {
+        background-position: 200%;
+    }
+}
+
+#Blog .icon {
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+    border-radius: 50%;
+    background-color: black;
+    padding: 0.7rem;
+    display: inline-block;
+    margin-left: 30px;
+    position: relative;
+    left: -30px;
+    border: white solid 1px;
+    top: 30px;
+}
+
+#Blog .icon i {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-weight: 600;
+    background: linear-gradient(90deg, green, orange, blue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anima 2s linear infinite;
+}
+
+#Blog h2 {
+    font-size: 30px;
+    background: linear-gradient(90deg, green, orange, blue);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anima 13s linear infinite;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+#Blog h3 {
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin-top: 50px;
+    background: linear-gradient(90deg, #665DCD, #D2AB67, #343434);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anima 4s linear infinite;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+#Blog img {
+    width: 250px;
+    height: 60px;
+    position: relative;
+    left: 150px;
+    top: 20px;
+    background: transparent;
+}
+
+#Blog h4 {
+    font-size: 25px;
+    position: relative;
+    background: transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -30px;
+    margin-left: -300px;
+    color: gray;
+}
+
+.asnovnoy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.bloki {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 80px;
+}
+
+.asnovnoy h2 {
+    position: relative;
+    z-index: 1;
+    font-size: 80px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    top: -20px;
+    left: -200px;
+}
+
+.asnovnoy h2:hover {
+    background: linear-gradient(90deg, #665DCD, #D2AB67, #343434);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anima 4s linear infinite;
+}
+
+.ong-taraf {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.ong-taraf p {
+    font-size: 28px;
+    color: #ffffff;
+    margin: 0;
+    background: linear-gradient(90deg, #665DCD, #D2AB67, #343434);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anima 10s linear infinite;
+}
+
+.ong-taraf span {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 10px;
+    background: linear-gradient(90deg, #665DCD, #D2AB67, #343434);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anima 4s linear infinite;
+    width: auto;
+}
+
+
+.ong-taraf i {
+    color: #ffffff;
+    position: relative;
+    top: -55px;
+    left: 380px;
+    background: transparent;
+    width: 40px;
+    background: linear-gradient(90deg, #665DCD, #D2AB67, #343434);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anima 4s linear infinite;
+}
+
+.contact {
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+    height: 500px;
+}
+
+.contact p {
+    font-size: 90px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+}
+
+.contact p:hover {
+    background: linear-gradient(90deg, #665DCD, #D2AB67, #343434);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anima 4s ease-in-out infinite;
+}
+
+.contact h1 {
+    font-size: 40px;
+    background: linear-gradient(90deg, white, #D2AB67, #343434);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anima 4s ease-in-out infinite;
+    margin-top: 50px;
+}
+
+.contact button {
+    width: 300px;
+    height: 70px;
+    font-size: 45px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(135deg, #665DCD, #5FA4E6, #D2AB67);
+    color: white;
+    border: none;
+    margin-top: 50px;
+}
+
+.contact button:hover {
+    background: linear-gradient(135deg, #5FA4E6, #D2AB67, #665DCD);
+}
+
+footer {
+    width: 90%;
+    height: 400px;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+
+footer .div p {
+    display: grid;
+    gap: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+footer .div p:hover {
+    background: linear-gradient(90deg, white, #D2AB67, #343434);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anima 4s ease-in-out infinite;
+}
+
+footer .div h1 {
+    font-size: 33px;
+    color: white;
+    margin-top: 20px;
+    background: linear-gradient(90deg, white, #D2AB67, #343434);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anima 4s ease-in-out infinite;
+}
+
+footer .div h2 {
+    font-size: 30px;
+    color: white;
+    margin-top: 20px;
+    background: linear-gradient(90deg, white, #D2AB67, #343434);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anima 4s ease-in-out infinite;
+}
+
+footer h3 {
+    font-size: 30px;
+    color: #333333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 150px;
+    background: linear-gradient(90deg, white, #D2AB67, #343434);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: tgit commit -m "Birinchi commit: Loyiha qo'shildi"ext;
+    -webkit-text-fill-color: transparent;
+    animation: anima 4s ease-in-out infinite;
+}
+
+footer img {
+    width: 300px;
+    height: 100px;
+    margin-left: 300px;
+}
+
+footer .h3 {
+    font-size: 30px;
+    color: #333333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 200px;
+}
